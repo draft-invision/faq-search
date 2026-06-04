@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ検索</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 16px;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      background: transparent;
+    }
+    #searchWidgetTrigger {
+      width: 100%;
+      padding: 12px 16px;
+      font-size: 16px;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+      box-sizing: border-box;
+      outline: none;
+    }
+    #searchWidgetTrigger:focus {
+      border-color: #4285f4;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Widget JavaScript bundle -->
+  <script src="https://cloud.google.com/ai/gen-app-builder/client?hl=ja"></script>
+
+  <!-- Search widget -->
+  <gen-search-widget
+    configId="ba68f9a6-7b4e-44b6-9bcc-f65600da4f14"
+    triggerId="searchWidgetTrigger">
+  </gen-search-widget>
+
+  <!-- 検索入力欄 -->
+  <input placeholder="FAQを検索する" id="searchWidgetTrigger" />
+
+</body>
+</html>
